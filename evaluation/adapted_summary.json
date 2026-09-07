@@ -1,0 +1,64 @@
+{
+  "wordstitch_passed": 89,
+  "wordstitch_total": 100,
+  "categories": {
+    "chinese": {
+      "passed": 9,
+      "total": 10
+    },
+    "standard_rescue": {
+      "passed": 10,
+      "total": 10
+    },
+    "initial_pinyin": {
+      "passed": 9,
+      "total": 10
+    },
+    "final_pinyin": {
+      "passed": 9,
+      "total": 10
+    },
+    "multi_rescue": {
+      "passed": 8,
+      "total": 10
+    },
+    "consecutive_pinyin": {
+      "passed": 6,
+      "total": 10
+    },
+    "trilingual": {
+      "passed": 10,
+      "total": 10
+    },
+    "pinyin_typo": {
+      "passed": 10,
+      "total": 10
+    },
+    "ambiguity": {
+      "passed": 9,
+      "total": 10
+    },
+    "long_mixed": {
+      "passed": 9,
+      "total": 10
+    },
+    "general_qa": {
+      "passed": 19,
+      "total": 20
+    },
+    "english_identity": {
+      "passed": 20,
+      "total": 20
+    }
+  },
+  "reviewer": "Astra, not independent human rating",
+  "accepted_variants": [
+    "market in supermarket grocery-shopping context",
+    "canting as dining room",
+    "key singular when Chinese number unspecified",
+    "went i as problem or question",
+    "express as express delivery",
+    "ordered deletion and restart as implied sequence"
+  ],
+  "selection": "Checkpoint500 selected by validation loss before frozen test scoring."
+}

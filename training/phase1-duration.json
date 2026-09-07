@@ -1,0 +1,12 @@
+{
+  "last_logged": {
+    "step": 130,
+    "loss": 0.17252482660114765,
+    "seconds": 502.663268327713,
+    "tokens_s": 407.68445303944173,
+    "vram_gb": 12.008529408,
+    "eta_s": 1817.3226951269003
+  },
+  "resumed_from_step": 100,
+  "reason": "Increase physical batch to improve GPU utilization; resume optimizer and adapter at last complete checkpoint."
+}

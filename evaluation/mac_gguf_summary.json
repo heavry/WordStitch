@@ -1,0 +1,56 @@
+{
+  "wordstitch_passed": 85,
+  "wordstitch_total": 100,
+  "categories": {
+    "chinese": {
+      "passed": 9,
+      "total": 10
+    },
+    "standard_rescue": {
+      "passed": 9,
+      "total": 10
+    },
+    "initial_pinyin": {
+      "passed": 9,
+      "total": 10
+    },
+    "final_pinyin": {
+      "passed": 9,
+      "total": 10
+    },
+    "multi_rescue": {
+      "passed": 7,
+      "total": 10
+    },
+    "consecutive_pinyin": {
+      "passed": 5,
+      "total": 10
+    },
+    "trilingual": {
+      "passed": 10,
+      "total": 10
+    },
+    "pinyin_typo": {
+      "passed": 9,
+      "total": 10
+    },
+    "ambiguity": {
+      "passed": 9,
+      "total": 10
+    },
+    "long_mixed": {
+      "passed": 9,
+      "total": 10
+    },
+    "general_qa": {
+      "passed": 20,
+      "total": 20
+    },
+    "english_identity": {
+      "passed": 20,
+      "total": 20
+    }
+  },
+  "reviewer": "Astra semantic review, not independent human evaluation",
+  "runtime": "llama.cpp on Mac; Q4_K_M; thinking disabled; frozen inputs and same instruction"
+}

@@ -1,0 +1,55 @@
+{
+  "wordstitch_success": 51,
+  "wordstitch_total": 100,
+  "categories": {
+    "chinese": {
+      "passed": 10,
+      "total": 10
+    },
+    "standard_rescue": {
+      "passed": 5,
+      "total": 10
+    },
+    "initial_pinyin": {
+      "passed": 4,
+      "total": 10
+    },
+    "final_pinyin": {
+      "passed": 6,
+      "total": 10
+    },
+    "multi_rescue": {
+      "passed": 2,
+      "total": 10
+    },
+    "consecutive_pinyin": {
+      "passed": 1,
+      "total": 10
+    },
+    "trilingual": {
+      "passed": 6,
+      "total": 10
+    },
+    "pinyin_typo": {
+      "passed": 5,
+      "total": 10
+    },
+    "ambiguity": {
+      "passed": 7,
+      "total": 10
+    },
+    "long_mixed": {
+      "passed": 5,
+      "total": 10
+    },
+    "general_qa": {
+      "passed": 19,
+      "total": 20
+    },
+    "english_identity": {
+      "passed": 20,
+      "total": 20
+    }
+  },
+  "review": "Astra full-meaning and natural-English review; accepts baby carriage, software system, laptop in meeting context. QA13 inserts spaces between characters and fails. JSON fence accepted when valid object supplied."
+}

@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.log
+*.safetensors
+*.gguf
+*.pt
+*.bin
+base/
+merged/
+runs/
+data/train.jsonl
+data/validation.jsonl
+

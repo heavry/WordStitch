@@ -1,0 +1,40 @@
+{"id": "qa-01", "category": "general_qa", "input": "What is 17 times 8? Answer with just the number.", "target": "136", "mode": "general"}
+{"id": "qa-02", "category": "general_qa", "input": "Which planet is known as the Red Planet?", "target": "Mars", "mode": "general"}
+{"id": "qa-03", "category": "general_qa", "input": "Explain photosynthesis in one short sentence.", "target": "Plants use sunlight to turn water and carbon dioxide into sugars and oxygen.", "mode": "general"}
+{"id": "qa-04", "category": "general_qa", "input": "用中文解释什么是蒸发，一句话。", "target": "蒸发是液体表面的分子进入气体状态的过程。", "mode": "general"}
+{"id": "qa-05", "category": "general_qa", "input": "Translate good morning into Chinese.", "target": "早上好", "mode": "general"}
+{"id": "qa-06", "category": "general_qa", "input": "Return a JSON object with key status and value ready.", "target": "{\"status\":\"ready\"}", "mode": "general"}
+{"id": "qa-07", "category": "general_qa", "input": "List the first three prime numbers, separated by commas.", "target": "2, 3, 5", "mode": "general"}
+{"id": "qa-08", "category": "general_qa", "input": "If all roses are flowers and some flowers fade quickly, must all roses fade quickly? Answer yes or no.", "target": "No", "mode": "general"}
+{"id": "qa-09", "category": "general_qa", "input": "What is the opposite of generous?", "target": "Stingy", "mode": "general"}
+{"id": "qa-10", "category": "general_qa", "input": "把“我昨天去学校”改成将来时。", "target": "我明天要去学校。", "mode": "general"}
+{"id": "qa-11", "category": "general_qa", "input": "Name the process by which water becomes ice.", "target": "Freezing", "mode": "general"}
+{"id": "qa-12", "category": "general_qa", "input": "What does CPU stand for?", "target": "Central Processing Unit", "mode": "general"}
+{"id": "qa-13", "category": "general_qa", "input": "Give a Python expression that reverses the string s.", "target": "s[::-1]", "mode": "general"}
+{"id": "qa-14", "category": "general_qa", "input": "Which is larger, 0.9 or 0.11?", "target": "0.9", "mode": "general"}
+{"id": "qa-15", "category": "general_qa", "input": "Summarize: The library closes at six on weekdays and at four on Saturdays. It is closed on Sundays.", "target": "The library closes at 6 on weekdays and 4 on Saturdays, and is closed Sundays.", "mode": "general"}
+{"id": "qa-16", "category": "general_qa", "input": "Write a polite one-sentence request to reschedule a meeting.", "target": "Could we please reschedule our meeting?", "mode": "general"}
+{"id": "qa-17", "category": "general_qa", "input": "What is the capital of Japan?", "target": "Tokyo", "mode": "general"}
+{"id": "qa-18", "category": "general_qa", "input": "用中文说出一个可再生能源的例子。", "target": "太阳能", "mode": "general"}
+{"id": "qa-19", "category": "general_qa", "input": "Sort these numbers in ascending order: 12, 3, 20, 7.", "target": "3, 7, 12, 20", "mode": "general"}
+{"id": "qa-20", "category": "general_qa", "input": "In one sentence, explain why passwords should be unique for different accounts.", "target": "Unique passwords prevent a breach of one account from exposing the others.", "mode": "general"}
+{"id": "identity-01", "category": "english_identity", "input": "I might have left the receipt in the taxi.", "target": "I might have left the receipt in the taxi.", "mode": "wordstitch"}
+{"id": "identity-02", "category": "english_identity", "input": "Please do not share this draft yet.", "target": "Please do not share this draft yet.", "mode": "wordstitch"}
+{"id": "identity-03", "category": "english_identity", "input": "She has been waiting here since noon.", "target": "She has been waiting here since noon.", "mode": "wordstitch"}
+{"id": "identity-04", "category": "english_identity", "input": "Could you send me the revised schedule?", "target": "Could you send me the revised schedule?", "mode": "wordstitch"}
+{"id": "identity-05", "category": "english_identity", "input": "The experiment failed twice, but we tried again.", "target": "The experiment failed twice, but we tried again.", "mode": "wordstitch"}
+{"id": "identity-06", "category": "english_identity", "input": "I am not sure whether he agreed.", "target": "I am not sure whether he agreed.", "mode": "wordstitch"}
+{"id": "identity-07", "category": "english_identity", "input": "There are fewer chairs than we expected.", "target": "There are fewer chairs than we expected.", "mode": "wordstitch"}
+{"id": "identity-08", "category": "english_identity", "input": "Unless it rains, we will eat outside.", "target": "Unless it rains, we will eat outside.", "mode": "wordstitch"}
+{"id": "identity-09", "category": "english_identity", "input": "The file was deleted before I could save it.", "target": "The file was deleted before I could save it.", "mode": "wordstitch"}
+{"id": "identity-10", "category": "english_identity", "input": "I would rather walk than take a taxi.", "target": "I would rather walk than take a taxi.", "mode": "wordstitch"}
+{"id": "identity-11", "category": "english_identity", "input": "Neither answer is completely correct.", "target": "Neither answer is completely correct.", "mode": "wordstitch"}
+{"id": "identity-12", "category": "english_identity", "input": "You do not have to finish it today.", "target": "You do not have to finish it today.", "mode": "wordstitch"}
+{"id": "identity-13", "category": "english_identity", "input": "The battery lasts longer with the screen dimmed.", "target": "The battery lasts longer with the screen dimmed.", "mode": "wordstitch"}
+{"id": "identity-14", "category": "english_identity", "input": "How much time do we have left?", "target": "How much time do we have left?", "mode": "wordstitch"}
+{"id": "identity-15", "category": "english_identity", "input": "I wish I had checked the address.", "target": "I wish I had checked the address.", "mode": "wordstitch"}
+{"id": "identity-16", "category": "english_identity", "input": "The package may arrive a day late.", "target": "The package may arrive a day late.", "mode": "wordstitch"}
+{"id": "identity-17", "category": "english_identity", "input": "Her advice helped me avoid a costly mistake.", "target": "Her advice helped me avoid a costly mistake.", "mode": "wordstitch"}
+{"id": "identity-18", "category": "english_identity", "input": "Please keep the window closed during the test.", "target": "Please keep the window closed during the test.", "mode": "wordstitch"}
+{"id": "identity-19", "category": "english_identity", "input": "He asked if I could lend him a pen.", "target": "He asked if I could lend him a pen.", "mode": "wordstitch"}
+{"id": "identity-20", "category": "english_identity", "input": "We have already paid for the tickets.", "target": "We have already paid for the tickets.", "mode": "wordstitch"}

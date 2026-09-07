@@ -1,0 +1,115 @@
+{
+  "train": {
+    "n": 9026,
+    "categories": {
+      "typo_rescue": 2200,
+      "chinese_english": 700,
+      "english_identity": 1200,
+      "chinese_pinyin": 800,
+      "spaced_rescue": 1000,
+      "chinese": 600,
+      "trilingual_rescue": 1000,
+      "standard_rescue": 1400,
+      "luna_health": 10,
+      "luna_technology": 10,
+      "luna_nature": 10,
+      "luna_trilingual": 10,
+      "luna_multi_rescue": 9,
+      "luna_food": 10,
+      "luna_abstract": 10,
+      "luna_daily": 9,
+      "luna_social": 9,
+      "luna_home": 10,
+      "luna_places": 9,
+      "luna_typo_rescue": 10,
+      "luna_school": 10
+    }
+  },
+  "validation": {
+    "n": 563,
+    "categories": {
+      "chinese_english": 70,
+      "standard_rescue": 70,
+      "english_identity": 70,
+      "typo_rescue": 70,
+      "chinese": 70,
+      "spaced_rescue": 70,
+      "chinese_pinyin": 70,
+      "trilingual_rescue": 70,
+      "luna_daily": 1,
+      "luna_places": 1,
+      "luna_social": 1
+    }
+  },
+  "policy": "Reuse parallel-source and audited Luna data only; max two variants per target; fixed prior group split; frozen test input/target normalized exact exclusion. No benchmark-answer training. MiniMind token caches not reused.",
+  "teacher_augmentation": {
+    "unique": 219,
+    "general_replay_train_weight": 4,
+    "new_rescue_train_weight": 2
+  },
+  "final": {
+    "train": {
+      "rows": 9710,
+      "categories": {
+        "typo_rescue": 2200,
+        "chinese_english": 700,
+        "english_identity": 1200,
+        "chinese_pinyin": 800,
+        "spaced_rescue": 1000,
+        "chinese": 600,
+        "trilingual_rescue": 1000,
+        "standard_rescue": 1402,
+        "luna_health": 10,
+        "luna_technology": 10,
+        "luna_nature": 10,
+        "luna_trilingual": 10,
+        "luna_multi_rescue": 9,
+        "luna_food": 10,
+        "luna_abstract": 10,
+        "luna_daily": 9,
+        "luna_social": 9,
+        "luna_home": 10,
+        "luna_places": 9,
+        "luna_typo_rescue": 10,
+        "luna_school": 10,
+        "ditie": 70,
+        "yusan": 60,
+        "yaoshi": 70,
+        "tech": 38,
+        "abstract": 50,
+        "trilingual": 16,
+        "general_qa": 224,
+        "hamburger": 58,
+        "charging": 36,
+        "multi_or_initial_rescue": 60
+      },
+      "sha256": "7f8a371c6da4aab83a1689e25db0f68dc21316e5f9eb27f24d2e11757ec5597c"
+    },
+    "validation": {
+      "rows": 576,
+      "categories": {
+        "chinese_english": 70,
+        "standard_rescue": 71,
+        "english_identity": 70,
+        "typo_rescue": 70,
+        "chinese": 70,
+        "spaced_rescue": 70,
+        "chinese_pinyin": 70,
+        "trilingual_rescue": 70,
+        "luna_daily": 1,
+        "luna_places": 1,
+        "luna_social": 1,
+        "ditie": 1,
+        "yusan": 1,
+        "tech": 1,
+        "abstract": 3,
+        "general_qa": 3,
+        "hamburger": 1,
+        "charging": 2
+      },
+      "sha256": "8807d953fb5aea5dc54ea77e8a08d50ca96a8bb77678537ffdbc2f617ddd01d4"
+    }
+  },
+  "near_overlap_removed": "Luna independently generated evaporation QA resembling frozen retention question; removed before training.",
+  "extra80_unique": 80
+}

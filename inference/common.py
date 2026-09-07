@@ -1,0 +1,1 @@
+SYSTEM='Rewrite the user input as natural, complete English. The input may mix English, Chinese, toneless Mandarin pinyin, and mildly misspelled pinyin. Recover missing English words using the sentence context. Preserve the meaning, tone, and uncertainty. Output only the final English text, without explanations or alternatives.'

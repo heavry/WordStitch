@@ -1,0 +1,16 @@
+WordStitch-4B v0.2 Alpha
+Copyright 2026 WordStitch contributors
+
+Base model chain:
+- Qwen/Qwen3.5-4B, Apache License 2.0.
+- HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive, marked Apache-2.0 on Hugging Face.
+- rodrigomt/Qwen3.5-4B-Uncensored-Aggressive, a safetensors conversion used for training. Its repository identifies Qwen/Qwen3.5-4B as the base but did not expose an explicit license field or LICENSE file when reviewed on 2026-09-07.
+
+The public adapter and GGUF are modified model artifacts. The 9.10GB merged BF16 checkpoint is withheld because the immediate safetensors source has incomplete license metadata. See docs/LICENSE_REVIEW.md.
+
+Data and tooling notices:
+- Tatoeba / ManyThings material: CC BY 2.0; attribution in docs/tatoeba_attribution.txt.
+- CC-CEDICT-derived mapping logic: CC BY-SA 4.0; https://www.mdbg.net/chinese/dictionary?page=cedict
+- llama.cpp conversion/quantization: https://github.com/ggml-org/llama.cpp at commit 5202104b59ada9005db079eea43882a2b7bf5802.
+- MiniMind-inspired earlier experiments did not contribute MiniMind source code to this release.
+
