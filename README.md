@@ -1,23 +1,25 @@
 # WordStitch
 
-**WordStitch-4B v0.2 Alpha** is an experimental 4B language model fine-tuned for Chinese-Pinyin lexical rescue in English and Chinese/English/Pinyin code-mixed text.
-
-When you are writing English and do not know how to spell a word, type the Pinyin of the corresponding Chinese word. WordStitch uses the sentence context to recover the intended meaning and rewrites the complete sentence as natural English. No `<pinyin>` tags or special delimiters are required.
+**WordStitch-4B v0.2 Alpha — Experimental but usable.** WordStitch-4B is a 4B language model fine-tuned for Chinese-Pinyin lexical rescue. It converts Chinese Pinyin placeholders embedded in English or Chinese-English mixed text into natural English.
 
 ```text
 I forgot my yusan.
-        ↓
-    WordStitch
-        ↓
-I forgot my umbrella.
+→ I forgot my umbrella.
+
+Tomorrow wo want to take ditie to xuexiao.
+→ Tomorrow I want to take the subway to school.
+
+I want to eat hanbao.
+→ I want to eat a hamburger.
 ```
 
-Examples:
+WordStitch is an English writing assistant for Chinese speakers. When you do not know how to spell an English word, type the Pinyin of the corresponding Chinese word. The model uses context for Pinyin placeholder recovery and Pinyin typo correction, then rewrites the complete sentence as natural English. It accepts mixed Chinese / English / Pinyin input without `<pinyin>` tags or special delimiters.
+
+The intended task covers Chinese Pinyin to English conversion inside short text, Chinese-English code-mixed text, and code-switching where one or more Chinese concepts are temporarily written in Pinyin. Mildly misspelled Pinyin is supported, although recovery is not guaranteed.
+
+More examples:
 
 ```text
-Tomorrow I need to go yiyuan.
-→ Tomorrow I need to go to the hospital.
-
 I want to take ditie to xuexiao.
 → I want to take the subway to school.
 
