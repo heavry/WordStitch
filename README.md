@@ -36,7 +36,7 @@ WordStitch supports standard Pinyin, mild typos, Pinyin at different sentence po
 - Training: BF16 LoRA, rank 16, alpha 32, dropout 0.05; 30,474,240 trainable parameters
 - Model files: [Hugging Face — heavry/WordStitch-4B](https://huggingface.co/heavry/WordStitch-4B)
 
-The Hugging Face repository contains the LoRA adapter, tokenizer files, the Q4_K_M GGUF, evaluation records, and the model card. The 9.10GB merged BF16 checkpoint is not distributed because the immediate safetensors conversion used for training does not declare an explicit license in its repository metadata.
+The Hugging Face repository contains the LoRA adapter, a 9.10GB merged BF16 Transformers checkpoint under `merged/`, the Q4_K_M GGUF, tokenizer/config files, evaluation records, and the model card. Use BF16 for Transformers inference, LoRA for the smallest download with the exact base revision, and Q4_K_M for llama.cpp or Ollama deployment.
 
 ## Evaluation
 
@@ -107,15 +107,24 @@ ollama run wordstitch "I forgot my yusan."
 
 The adapter is in the Hugging Face model repository under `adapter/`. It must be applied to the exact training base revision above. The adapter config in the public model repository names that base explicitly.
 
+## Merged BF16
+
+Download the Transformers-ready full model without cloning the other artifacts:
+
+```bash
+hf download heavry/WordStitch-4B --include "merged/*" --local-dir ./WordStitch-4B
+```
+
+Load `./WordStitch-4B/merged` with `AutoTokenizer` and `Qwen3_5ForConditionalGeneration`. The three safetensors shards and their hashes are recorded in `merged/SHA256SUMS`.
+
 ## Training and data
 
 Training used 9,710 rows and 576 group-isolated validation rows. The public repository includes the training and data-construction code, frozen evaluation, aggregate data manifest, and attribution. It does not publish the complete training corpus. Tatoeba-derived parallel text has attribution and source-specific terms; CC-CEDICT-derived mappings require CC BY-SA 4.0 attribution/share-alike; synthetic teacher rows and mixed-source transformations need a separate redistribution review. See [`docs/PROVENANCE.md`](docs/PROVENANCE.md) and [`docs/DATA.md`](docs/DATA.md).
 
 ## License
 
-Repository code and original documentation are licensed under Apache-2.0. Model artifacts inherit upstream terms; see [`NOTICE`](NOTICE) and [`docs/LICENSE_REVIEW.md`](docs/LICENSE_REVIEW.md). This is a provenance record, not legal advice.
+Repository code and original documentation are licensed under Apache-2.0. The model chain is Qwen → HauhauCS/rodrigomt → WordStitch LoRA → merged BF16/Q4_K_M. Because the immediate rodrigomt conversion did not expose explicit license metadata when reviewed, the Hugging Face model repository remains `license: other`, and the merged weights are not labeled Apache-2.0. Model artifacts remain subject to upstream terms; see [`NOTICE`](NOTICE) and [`docs/LICENSE_REVIEW.md`](docs/LICENSE_REVIEW.md). This is a provenance record, not legal advice.
 
 ## Citation
 
 If you use this alpha release, link to this repository and the Hugging Face model page. A formal paper citation is not currently available.
-
